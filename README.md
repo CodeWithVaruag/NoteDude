@@ -17,23 +17,22 @@ You can download the latest version of NoteDude from the link below:
 
 [Download NoteDude Setup 1.0.0.exe](https://github.com/CodeWithVaruag/NoteDude/raw/main/NoteDude%20Setup%201.0.0.exe)
 
-## Screenshots
+## Screenshot no 1
 
-![Screenshot 1]![notedude1](https://github.com/user-attachments/assets/f5f58141-c87b-4b4d-b79e-0bc1a12f92fd)
+![Screenshot 1](https://github.com/user-attachments/assets/f5f58141-c87b-4b4d-b79e-0bc1a12f92fd)
 
 
-##
+## Screenshot no 2
 
  <!-- Replace with the path to your screenshot -->
 ![Screenshot 2](https://github.com/user-attachments/assets/53602bf4-8268-48ce-a66a-0dfa77b880ea) 
 
-##
+## Screenshot no 3
 
 <!-- Replace with the path to your screenshot -->
 ![Screenshot 3](https://github.com/user-attachments/assets/320df069-4ef2-43e6-88f6-188414621b1c)
 
-creenshot_3) <!-- Replace with the path to your screenshot -->
-![notedude3]
+
 
 ## Installation
 
