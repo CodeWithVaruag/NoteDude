@@ -1,0 +1,250 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #c6dcdd; /* Soft background */
+    overflow: hidden; /* Prevent body scrolling */
+}
+
+.header {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 20px; /* Space below the header */
+    margin-top: 10px;
+}
+
+.header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 35px; /* Adjust font size as needed */
+    color: #fff; /* Your primary color */
+    font-weight: bold;
+    padding-left: 10px;
+    font-family: cursive;
+}
+
+.app-icon {
+    width: 40px; /* Set width of the icon */
+    height: 40px; /* Set height of the icon */
+    margin-left: 10px; /* Space between the title and icon */
+}
+
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: calc(100vh - 40px); /* Adjust for button space */
+    overflow: hidden; /* Prevent scrollbar on the app */
+}
+
+#notesList {
+    flex: 1;
+    overflow-y: auto; /* This allows the default scrollbar */
+    margin-bottom: 20px;
+    padding: 10px;
+    max-height: calc(100vh - 100px); /* Ensure it fits within the viewport */
+}
+
+/* Other styles remain unchanged */
+
+
+
+.note {
+    background: #ffffff; /* White background for notes */
+    padding: 28px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 12px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: #333;
+    font-family: 'Roboto', sans-serif; /* Updated font */
+}
+
+.note:hover {
+    background: #e9ecef; /* Light grey on hover */
+}
+
+
+#noteEditor {
+    background: #fefefe; /* Off-white for a softer look */
+    padding: 30px; /* Spacious feel */
+    border-radius: 15px; /* Larger rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto; /* Centered with margin */
+    transition: all 0.3s ease;
+    border: 3px solid #2ab4bb; /* Orange border for visual appeal */
+    max-height: calc(100vh - 100px); /* Ensure it fits within the viewport */
+    overflow-y: auto; /* Allow scrolling within the editor if content exceeds */
+}
+
+.back-button {
+    background: #ffffff; /* Clean look */
+    border: 2px solid #2ab4bb; /* Consistent border */
+    border-radius: 8px; /* Larger radius */
+    padding: 10px 14px; /* Comfort padding */
+    font-size: 18px;
+    color: #2ab4bb; /* Matching text color */
+    cursor: pointer;
+    margin-bottom: 15px; /* Space below button */
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background: #196c70; /* Darker on hover */
+    color: #2ab4bb; /* Original color on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+.add-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #2ab4bb; /* Warm background */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-button:hover {
+    background-color: #2ab4bb; /* Darker on hover */
+    transform: scale(1.1);
+}
+
+input[type="text"], textarea {
+    width: calc(100% - 30px); /* Full width minus padding */
+    border-radius: 8px; /* Consistent radius */
+    border: 1px solid #ccc;
+    padding: 12px; /* Increased padding */
+    margin-top: 10px; /* Spacing above elements */
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s;
+    font-family: 'Roboto', sans-serif; /* Same font as notes */
+    font-size: 15px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #2ab4bb; /* Focus color */
+    outline: none;
+    
+}
+
+textarea {
+    height: 140px; /* Height for usability */
+    resize: none; /* Prevent resizing */
+}
+
+/* Button styles */
+button {
+    background-color: #2ab4bb; /* Default button background */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Match button radius */
+    padding: 12px 18px; /* Increased padding */
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons */
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center text and icon */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2ab4bb; /* Darker on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Copy button specific styles */
+#copyNote {
+    background-color: transparent; /* No background */
+    color: #2ab4bb; /* Orange text color */
+    border: 1px solid transparent; /* Keep border consistent */
+    padding: 10px 15px; /* Match padding */
+}
+
+#copyNote:hover {
+    color: #1f1c19; /* Darker on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Container for buttons */
+.button-container {
+    display: inline-flex;
+    justify-content: space-between; /* Align buttons on the same line */
+    margin-top: 15px; /* Space above buttons */
+}
+
+
+
+/* Modernize the icon */
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #noteEditor {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    textarea {
+        height: 100px; /* Decrease height for smaller screens */
+    }
+
+    input[type="text"] {
+        font-size: 16px; /* Smaller font for title */
+    }
+
+    .back-button {
+        font-size: 16px; /* Smaller back button font */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button font */
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+
+
+
+
+/************************************/
+
+/* Custom scrollbar styles */
+#notesList::-webkit-scrollbar,
+#noteEditor::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+#notesList::-webkit-scrollbar-track,
+#noteEditor::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#notesList::-webkit-scrollbar-thumb,
+#noteEditor::-webkit-scrollbar-thumb {
+    background: #2ab4bb; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#notesList::-webkit-scrollbar-thumb:hover,
+#noteEditor::-webkit-scrollbar-thumb:hover {
+    background: #196c70; /* Darker color on hover */
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NoteDude</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="header">
+            <img src="icon.ico" alt="App Icon" class="app-icon">
+            <br>
+            <h1>NoteDude</h1>
+        </div>
+        <div id="notesList"></div>
+        <div id="noteEditor" class="hidden">
+            <button id="backBtn" class="back-button">←</button> <!-- Back button -->
+            <input type="text" id="noteTitle" placeholder="Title">
+            <textarea id="noteContent" placeholder="Content"></textarea>
+            <div class="button-container">
+                <button id="saveNote">Save</button>
+                <button id="deleteNote">Delete</button>
+                <button id="copyNote"><i class="fas fa-paste"></i></button>
+            </div>
+                 <!-- FontAwesome clipboard icon -->
+            </button>
+        </div>
+        
+        
+        <button id="addNote" class="add-button">+</button>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
