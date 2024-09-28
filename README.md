@@ -24,7 +24,7 @@ You can download the latest version of NoteDude from the link below:
 ## Screenshot no 2
 
  <!-- Replace with the path to your screenshot -->
-![Screenshot 2](https://github.com/user-attachments/assets/53602bf4-8268-48ce-a66a-0dfa77b880ea) 
+![Screenshot 2](https://github.com/user-attachments/assets/abac02de-c8e6-46d1-b753-bcafac511a58)
 
 ## Screenshot no 3
 
