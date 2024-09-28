@@ -43,7 +43,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 ### Keywords for Discoverability
-**Note-Taking App, Productivity Tool, Coding Notes, Desktop Application, NoteDude**
+**Note-Taking App, Productivity Tool, Coding Notes, Desktop Application, NoteDude, download note taking app for pc**
 
 
 ---
