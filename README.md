@@ -1,6 +1,5 @@
 # NoteDude Desktop Application
 
-![NoteDude Logo] ()<!-- Replace with the path to your logo image -->
 
 ## Description
 
